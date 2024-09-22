@@ -1,25 +1,24 @@
-# Define variables
-PYTHON = python
-PYLINT = pylint
-BLACK = black
-PYTEST = pytest
-DOCKER = docker
-
-# Install dependencies
 install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
-# Format code using Black
 format:
-	$(BLACK) *.py
+	black *.py mylib/*.py *.ipynb
 
-# Lint code using Pylint
 lint:
-	$(PYLINT) --disable=R,C --ignore-patterns=test_*?py *.py
+	ruff check *.py mylib/*.py
 
-# Run tests using Pytest
+container-lint:
+	docker run --rm -i hadolint/hadolint < Dockerfile
+
 test:
-	$(PYTHON) -m pytest --cov=main test_main.py
-	
-# Default target
+	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py *.ipynb
+
+generate_and_push:
+	python main.py
+	git config --local user.email "action@github.com"
+	git config --local user.name "GitHub Action"
+	git add summary_report.md
+	git commit -m "Summary_report.md" || true 
+	git push
+
 all: install format lint test
