@@ -22,3 +22,4 @@
 
 ![Average purchase_amount by region](bar_plot_average_purchase_amt_by_regions.png)
 
+
