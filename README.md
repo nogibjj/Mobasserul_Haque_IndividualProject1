@@ -9,6 +9,7 @@ This project performs exploratory data analysis (EDA) on a dataset containing cu
 ## Demo Video
 The demo video for this **Individual Project 1**, is uploaded to this repo:  
 ![Demo video](demo.mp4)
+![Demo Video Youtube Link](https://youtu.be/Egb39YCRVog)
 
 ## File Structure 
 ```
