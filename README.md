@@ -7,38 +7,6 @@
 # Pandas Descriptive Script Mini Project
 This project performs exploratory data analysis (EDA) on a dataset containing customer purchasing behavior, providing insights into various patterns and relationships using pandas, Matplotlib, and Seaborn.
 
-## File Structure 
-```
-Nakiyah_IndividualProject1/
-├── .devcontainer/
-│   ├── devcontainer.json
-│   └── Dockerfile
-├── .github/
-│   ├── workflows/format.yml
-│   ├── workflows/install.yml
-│   ├── workflows/lint.yml
-│   ├── workflows/test.yml
-├── mylib/
-|   ├── __init__.py
-│   ├── lib.py
-├── bar_plot_average_purchase_amt_by_regions.png
-├── Correlation_matrix_columns
-├── Customer Purchasing Behaviors.csv                                        
-├── Histogram_column_distributions.png                                      
-├── Loyalty_score_by_region_boxplot.png                                  
-├── main.ipynb                                   
-├── main.py                             
-├── Makefile                  
-├── README.md                       
-├── requirements.txt
-├── scatter_plot_hue_by_region
-├── scatter_plot_trend_line   
-├── summary_report.md                  
-├── test_lib.py
-├── test_main.py
-├── test_report.md                          
-```
-
 ## Table of Contents
 - [Overview](#overview)
 - [Source](#source)
