@@ -1,3 +1,10 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def read_csv_file(path):
+    return pd.read_csv(path)
+
 def summary_statistics(dataframe, report_file):
     """Display summary statistics for numerical columns in the DataFrame."""
     summary = dataframe.describe().transpose()
