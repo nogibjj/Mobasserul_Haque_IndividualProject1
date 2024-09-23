@@ -17,7 +17,7 @@ generate_and_push:
 	python main.py
 	git config --local user.email "action@github.com"
 	git config --local user.name "GitHub Action"
-	git add summary_report.md
+	git add README.md summary_report.md
 	git commit -m "Summary_report.md" || true 
 	git push
 
