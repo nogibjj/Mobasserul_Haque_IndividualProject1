@@ -8,13 +8,16 @@ from main import (
 )
 
 # Sample data for testing
-sample_data = """customer_id,age,annual_income,purchase_amount,
-purchase_frequency,region,loyalty_score
-1,23,50000,200,5,North,80
-2,45,60000,300,7,South,85
-3,34,55000,250,6,East,90
-4,50,65000,400,8,West,70
-5,29,70000,350,7,North,75"""
+# Sample data for testing
+sample_data = (
+    "customer_id,age,annual_income,purchase_amount,purchase_frequency,"
+    "region,loyalty_score\n"
+    "1,23,50000,200,5,North,80\n"
+    "2,45,60000,300,7,South,85\n"
+    "3,34,55000,250,6,East,90\n"
+    "4,50,65000,400,8,West,70\n"
+    "5,29,70000,350,7,North,75"
+)
 
 # Function to create DataFrame from sample data using StringIO
 def setup_dataframe():
