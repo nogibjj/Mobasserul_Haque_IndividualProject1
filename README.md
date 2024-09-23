@@ -1,11 +1,14 @@
 [![Test](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml)
 [![Lint](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml)
 [![Install](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml)
-[![Install](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml)
-
+[![Format](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/format.yml)
 
 # Pandas Descriptive Script Mini Project
 This project performs exploratory data analysis (EDA) on a dataset containing customer purchasing behavior, providing insights into various patterns and relationships using pandas, Matplotlib, and Seaborn.
+
+## Demo Video
+The demo video for this **Individual Project 1**, is uploaded to this repo:  
+![Demo video](demo.mp4)
 
 ## File Structure 
 ```
@@ -68,7 +71,7 @@ This project focuses on analyzing customer purchasing behavior using a dataset i
 
 ## Source
 The dataset used in this project is **Customer Purchasing Behaviors**, which can be found on Kaggle:  
-[Customer Purchasing Behaviors Dataset](https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors)
+![Customer Purchasing Behaviors Dataset](https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors)
 
 ## About Dataset
 
