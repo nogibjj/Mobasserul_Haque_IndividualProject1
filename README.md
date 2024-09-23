@@ -7,7 +7,7 @@
 # Pandas Descriptive Script Mini Project
 This project performs exploratory data analysis (EDA) on a dataset containing customer purchasing behavior, providing insights into various patterns and relationships using pandas, Matplotlib, and Seaborn.
 
-## Table of Contents
+## Table of Content
 - [Overview](#overview)
 - [Source](#source)
 - [About Dataset](#about-dataset)
