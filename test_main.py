@@ -2,9 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from io import StringIO
 from main import (
-    read_csv_file, summary_statistics, plot_histograms, 
-    plot_scatter_with_hue, plot_box_by_category, 
-    plot_correlation_heatmap, plot_scatter_with_trend, plot_bar_by_category
+    summary_statistics, plot_histograms, plot_scatter_with_hue, 
+    plot_box_by_category, plot_correlation_heatmap, 
+    plot_scatter_with_trend, plot_bar_by_category
 )
 
 # Sample data for testing
@@ -27,12 +27,26 @@ def test_main_workflow():
     
     # Run each function in sequence
     summary_statistics(df, output_report)
-    plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], output_report)
-    plot_scatter_with_hue(df, 'annual_income', 'purchase_amount', 'region', output_report)
-    plot_box_by_category(df, 'region', 'loyalty_score', output_report)
-    plot_correlation_heatmap(df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], output_report)
-    plot_scatter_with_trend(df, 'annual_income', 'purchase_amount', output_report)
-    plot_bar_by_category(df, 'region', 'purchase_amount', output_report)
+    plot_histograms(
+        df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], 
+        output_report
+    )
+    plot_scatter_with_hue(
+        df, 'annual_income', 'purchase_amount', 'region', output_report
+    )
+    plot_box_by_category(
+        df, 'region', 'loyalty_score', output_report
+    )
+    plot_correlation_heatmap(
+        df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], 
+        output_report
+    )
+    plot_scatter_with_trend(
+        df, 'annual_income', 'purchase_amount', output_report
+    )
+    plot_bar_by_category(
+        df, 'region', 'purchase_amount', output_report
+    )
     
     print("test_main_workflow passed")
 

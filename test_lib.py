@@ -4,7 +4,8 @@ from io import StringIO
 from myLib.lib import (
     read_csv_file, summary_statistics, plot_histograms, 
     plot_scatter_with_hue, plot_box_by_category, 
-    plot_correlation_heatmap, plot_scatter_with_trend, plot_bar_by_category
+    plot_correlation_heatmap, plot_scatter_with_trend, 
+    plot_bar_by_category
 )
 
 # Sample data for testing
@@ -38,7 +39,10 @@ def test_plot_histograms():
 
     # Mock plt.show to prevent actual plotting during tests
     plt.show = lambda: None
-    plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], "test_report.md")
+    plot_histograms(
+        df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], 
+        "test_report.md"
+    )
     print("test_plot_histograms passed")
 
 def test_plot_scatter_with_hue():
@@ -46,7 +50,9 @@ def test_plot_scatter_with_hue():
     df = setup_dataframe()
 
     plt.show = lambda: None
-    plot_scatter_with_hue(df, 'annual_income', 'purchase_amount', 'region', "test_report.md")
+    plot_scatter_with_hue(
+        df, 'annual_income', 'purchase_amount', 'region', "test_report.md"
+    )
     print("test_plot_scatter_with_hue passed")
 
 def test_plot_box_by_category():
@@ -54,7 +60,9 @@ def test_plot_box_by_category():
     df = setup_dataframe()
 
     plt.show = lambda: None
-    plot_box_by_category(df, 'region', 'loyalty_score', "test_report.md")
+    plot_box_by_category(
+        df, 'region', 'loyalty_score', "test_report.md"
+    )
     print("test_plot_box_by_category passed")
 
 def test_plot_correlation_heatmap():
@@ -62,7 +70,10 @@ def test_plot_correlation_heatmap():
     df = setup_dataframe()
 
     plt.show = lambda: None
-    plot_correlation_heatmap(df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], "test_report.md")
+    plot_correlation_heatmap(
+        df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], 
+        "test_report.md"
+    )
     print("test_plot_correlation_heatmap passed")
 
 def test_plot_scatter_with_trend():
@@ -70,7 +81,9 @@ def test_plot_scatter_with_trend():
     df = setup_dataframe()
 
     plt.show = lambda: None
-    plot_scatter_with_trend(df, 'annual_income', 'purchase_amount', "test_report.md")
+    plot_scatter_with_trend(
+        df, 'annual_income', 'purchase_amount', "test_report.md"
+    )
     print("test_plot_scatter_with_trend passed")
 
 def test_plot_bar_by_category():
@@ -78,7 +91,9 @@ def test_plot_bar_by_category():
     df = setup_dataframe()
 
     plt.show = lambda: None
-    plot_bar_by_category(df, 'region', 'purchase_amount', "test_report.md")
+    plot_bar_by_category(
+        df, 'region', 'purchase_amount', "test_report.md"
+    )
     print("test_plot_bar_by_category passed")
 
 # Run the tests
