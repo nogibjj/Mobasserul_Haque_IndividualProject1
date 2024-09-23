@@ -8,13 +8,13 @@ from main import (
 )
 
 # Sample data for testing
-sample_data = """customer_id,age,annual_income,purchase_amount,purchase_frequency,region,loyalty_score
+sample_data = """customer_id,age,annual_income,purchase_amount,
+purchase_frequency,region,loyalty_score
 1,23,50000,200,5,North,80
 2,45,60000,300,7,South,85
 3,34,55000,250,6,East,90
 4,50,65000,400,8,West,70
-5,29,70000,350,7,North,75
-"""
+5,29,70000,350,7,North,75"""
 
 # Function to create DataFrame from sample data using StringIO
 def setup_dataframe():
@@ -28,7 +28,8 @@ def test_main_workflow():
     # Run each function in sequence
     summary_statistics(df, output_report)
     plot_histograms(
-        df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], 
+        df, 
+        ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], 
         output_report
     )
     plot_scatter_with_hue(
@@ -38,7 +39,8 @@ def test_main_workflow():
         df, 'region', 'loyalty_score', output_report
     )
     plot_correlation_heatmap(
-        df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], 
+        df, 
+        ['purchase_amount', 'purchase_frequency', 'loyalty_score'], 
         output_report
     )
     plot_scatter_with_trend(
